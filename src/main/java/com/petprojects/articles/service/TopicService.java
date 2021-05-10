@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 public class TopicService {
 
-    private TopicRepository repository;
+    private final TopicRepository repository;
 
     public TopicService(TopicRepository repository) {
         this.repository = repository;

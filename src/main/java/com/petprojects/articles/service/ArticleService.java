@@ -12,8 +12,8 @@ import java.util.Set;
 @Service
 public class ArticleService {
 
-    private ArticleRepository articlesRepository;
-    private TopicRepository topicRepository;
+    private final ArticleRepository articlesRepository;
+    private final TopicRepository topicRepository;
 
     public ArticleService(ArticleRepository articlesRepository, TopicRepository topicRepository) {
         this.articlesRepository = articlesRepository;
